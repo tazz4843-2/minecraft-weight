@@ -1,10 +1,18 @@
 import math
 layers = int(raw_input('Select how many shulker boxes you would like: '))
 
+if (layers > 216):
+    print('****ERROR: Weight has overflowed and is now beyond infinity****')
+    print('Exiting with error code 1')
+    exit(1)
+
+if (layers > 212 && layers < 216):
+    print('**WARN: Weight is equal to inf (infinity)**')
+
 weight = 0 # Total weight
 blockName = 'gold' # Set to the block name
 first = 37*27*64 # Filling the inventory full of shulker boxes full of said block
-blockWeight = 19300 # Weight of said block
+blockWeight = 19300 # Weight of said block in kilograms
 
 layers = layers - 1
 if (layers == 0):
