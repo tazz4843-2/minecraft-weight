@@ -6,7 +6,7 @@ if (layers > 216):
     print('Exiting with error code 1')
     exit(1)
 
-if (layers > 212 && layers < 216):
+if (layers > 212 and layers < 216):
     print('**WARN: Weight is equal to inf (infinity)**')
 
 weight = 0 # Total weight
