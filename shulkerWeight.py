@@ -18,7 +18,7 @@ else:
 r = 0 # Radius of the event horizon (if greater than 1.80m, Steve is a black hole)
 c = 299792458 # Speed of light (used to calculate radius of event horizon)
 G = 6.67408E-11
-M = total + 60 # Weight of all the blocks plus Steve's weight [150lbs or 68kg])
+M = total + 60 # Weight of all the blocks plus Steve's weight [150lbs or 60kg])
 
 # Formula for radius of event horizon is r = 2GM/c^2
 r = 2 * G * M / math.pow(c,2)
